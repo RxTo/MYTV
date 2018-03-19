@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:background = "#000000"
+	>
+	
+	<ImageView
+		android:id = "@+id/ivBack"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:src = "@drawable/btn_zhibojian_back_selector"
+		android:layout_margin="10dp"
+		/>
+	
+	<ImageView
+		android:id = "@+id/ivShare"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentRight = "true"
+		android:layout_margin = "10dp"
+		android:src = "@drawable/btn_zhibojian_fenxiang_selector"
+		/>
+	
+	<TextView
+		android:id = "@+id/tvRoomTitle"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:maxLines = "1"
+		android:padding="10dp"
+		android:singleLine = "true"
+		/>
+	
+</RelativeLayout>

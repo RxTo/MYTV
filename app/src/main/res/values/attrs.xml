@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="EditViewDraw">
+		<attr name="leftDrawable"/>
+		<attr name="drawableWidth"/>
+		<attr name="drawableHeight"/>
+	</declare-styleable>
+	<declare-styleable name = "ScaleImageView">
+		<attr name = "ratio" format="float"/>
+	</declare-styleable>
+</resources>

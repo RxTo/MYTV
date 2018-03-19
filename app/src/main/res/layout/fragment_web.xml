@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:orientation = "vertical">
+	
+	
+	<android.support.v7.widget.Toolbar
+		android:layout_width = "match_parent"
+		android:layout_height = "50dp"
+		app:contentInsetLeft = "0dp"
+		app:contentInsetStart = "0dp"
+		app:layout_scrollFlags = "scroll|enterAlways|snap">
+		
+		<ImageView
+			android:id = "@+id/ivLeft"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "start"
+			android:layout_marginStart = "10dp"
+			android:src = "@drawable/btn_back_selector" />
+		
+		<ImageView
+			android:id = "@+id/ivRight"
+			android:layout_width = "20dp"
+			android:layout_height = "20dp"
+			android:layout_gravity = "end"
+			android:layout_marginEnd = "10dp"
+			android:src = "@drawable/ic_top_message" />
+		
+		<TextView
+			android:id = "@+id/tvTitle"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "center"
+			android:gravity = "center"
+			android:singleLine = "true"
+			android:textSize = "20sp" />
+	
+	</android.support.v7.widget.Toolbar>
+	
+	
+	<FrameLayout
+		android:id = "@+id/fc"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent">
+		
+		<WebView
+			android:id = "@+id/webView"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent" />
+		
+		<ProgressBar
+			android:id = "@+id/progressBar"
+			style = "@style/progressBarHorizontalStyle"
+			android:layout_width = "match_parent"
+			android:layout_height = "6dp" />
+		
+		<include
+			android:id="@+id/layoutError"
+			android:visibility="gone"
+			layout="@layout/layout_error"/>
+	</FrameLayout>
+</LinearLayout>

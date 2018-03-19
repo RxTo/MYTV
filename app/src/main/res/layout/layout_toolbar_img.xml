@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.AppBarLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:id = "@+id/toolbar"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content"
+	app:elevation="0dp"
+	android:theme = "@style/AppTheme.AppBarOverlay"
+	app:popupTheme = "@style/AppTheme.PopupOverlay"
+	>
+	
+	<android.support.v7.widget.Toolbar
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		app:contentInsetLeft = "0dp"
+		app:contentInsetStart = "0dp"
+		app:layout_scrollFlags = "scroll|enterAlways|snap"
+		>
+		
+		<ImageView
+			android:id = "@+id/ivLeft"
+			android:layout_width = "wrap_content"
+			android:layout_height = "20dp"
+			android:layout_gravity = "start"
+			android:layout_marginStart = "10dp"
+			android:src = "@drawable/ic_top_search"
+			/>
+		
+		<ImageView
+			android:id = "@+id/ivRight"
+			android:layout_width = "wrap_content"
+			android:layout_height = "20dp"
+			android:layout_gravity = "end"
+			android:layout_marginEnd = "10dp"
+			android:src = "@drawable/ic_top_message"/>
+		
+		<ImageView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity = "center"
+			android:src = "@drawable/ic_top_logo"/>
+	
+	</android.support.v7.widget.Toolbar>
+	
+	<View
+		android:layout_width = "match_parent"
+		android:layout_height = "1dp"
+		android:background = "@color/line_bg"/>
+
+
+</android.support.design.widget.AppBarLayout>

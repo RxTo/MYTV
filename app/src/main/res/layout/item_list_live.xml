@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content"
+	android:layout_margin = "@dimen/dimen_5dp"
+	>
+	
+	<com.example.yuki.yukitv.widget.ScaleImageView
+		android:id = "@+id/ivThumb"
+		android:layout_margin="@dimen/dimen_5dp"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentStart = "true"
+		android:layout_alignParentTop = "true"
+		android:scaleType="centerCrop"
+		app:ratio = "1.78"
+		/>
+	
+	<TextView
+		android:id = "@+id/tvStatus"
+		android:layout_width = "wrap_content"
+		android:layout_height = "20dp"
+		android:layout_alignParentEnd = "true"
+		android:layout_alignParentTop = "true"
+		android:background = "@drawable/ic_history_islive"
+		android:gravity = "center"
+		android:paddingEnd = "10dp"
+		android:paddingStart = "40dp"
+		android:text = "正在直播"
+		android:textColor = "@android:color/white"
+		android:textSize = "12sp"
+		android:visibility = "gone"
+		/>
+	
+	<TextView
+		android:id = "@+id/tvTitle"
+		android:layout_width = "match_parent"
+		android:layout_height = "30dp"
+		android:layout_alignBottom = "@+id/ivThumb"
+		android:background = "@drawable/title_background"
+		android:gravity = "bottom"
+		android:maxLines = "1"
+		android:paddingBottom = "5dp"
+		android:paddingStart = "5dp"
+		android:singleLine = "true"
+		android:layout_marginStart="@dimen/dimen_5dp"
+		android:layout_marginEnd="@dimen/dimen_5dp"
+		android:textColor = "@android:color/white"
+		android:textSize = "12sp"
+		android:textStyle = "bold"
+		/>
+	
+	<LinearLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_below = "@+id/ivThumb"
+		android:gravity = "center_vertical"
+		android:orientation = "horizontal"
+		>
+		
+		<TextView
+			android:id = "@+id/tvName"
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_weight = "1"
+			android:maxLines = "2"
+			android:paddingStart = "5dp"
+			android:singleLine = "true"
+			android:textSize = "13sp"
+			/>
+		
+		<TextView
+			android:id = "@+id/tvViewer"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:drawableLeft = "@drawable/viewer"
+			android:drawablePadding = "5dp"
+			android:maxLines = "1"
+			android:textColor = "@android:color/darker_gray"
+			android:textSize = "12sp"
+			/>
+	</LinearLayout>
+</RelativeLayout>
+
